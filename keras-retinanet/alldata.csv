@@ -1,0 +1,5 @@
+image_name,x_min,y_min,x_max,y_max,class_name
+maskdb/train/c1r1e1n4_213.tif,212,324,239,345,Hole
+maskdb/train/c1r1e1n3_197.tif,160,358,185,380,Hole
+maskdb/train/c1r1e1n2_193.tif,302,408,327,445,Hole
+maskdb/train/c1r1e1n1_179.tif,583,376,605,397,Hole

@@ -1,12 +1,12 @@
-# RetinaNet_mask
+# RetinaNet_Fabric defect detection
 
 ## RetinaNet
 
 ![RetinanNet](c7uqwbldw9w4zhbzmyo8.png)
 
-## RetinaNet based Mask+Face vs Nomask+Face detection
+## Defect detection
 
-RetinaNet detects two classes of face - 0)with mask 1)without mask
+RetinaNet detects fabric defects: Stain, Line, Hole
 
 Green rectangle is ground truth
 
@@ -26,8 +26,5 @@ Run RetinaMask.ipynb
 
 Press shift+enter to execute cells
 
-![Face with mask](mask.png)
-
-![No mask Face](nomask.png)
 
 

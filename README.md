@@ -1,5 +1,9 @@
 # RetinaNet_Fabric defect detection
 
+## clone repo
+
+```git clone https://github.com/jerinka/RetinaNet_Fabric_Defect.git```
+
 ## RetinaNet
 
 ![RetinanNet](c7uqwbldw9w4zhbzmyo8.png)

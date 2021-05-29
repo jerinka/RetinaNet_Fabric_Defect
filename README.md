@@ -16,19 +16,37 @@ Green rectangle is ground truth
 
 Other color is detection
 
-## Virtual env
+## Requirement 
 
-virtualenv venv3 --python=python3
+Ubuntu 18.04
 
-source venv3/bin/activate
+Might work in windows too(no guarantee), but some of the packages version might have to be changed. 
+
+## Steps to run: 
+
+cd RetinaNet_Fabric_Defect
+
+virtualenv venvR --python=python3
+
+source venvR/bin/activate
 
 pip3 install jupyter notebook
 
+python -m pip install ipykernel
+
+python -m ipykernel install --user --name=venvR
+
+## may refer link below incase of any difficulty in running jupter in virtualenv
+![running-jupyter-in-venv](http://veekaybee.github.io/2020/02/18/running-jupyter-in-venv/)
+![another link](https://janakiev.com/blog/jupyter-virtual-envs/)
+
 jupyter notebook
 
-Run RetinaMask.ipynb
+Open RetinaMask.ipynb
 
 Press shift+enter to execute cells
+
+
 
 
 

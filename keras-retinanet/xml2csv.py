@@ -25,7 +25,14 @@ def xml2df(xml_path):
         tree = ET.parse(xml_path)
         root = tree.getroot()
         for member in root.findall('object'):
-            img_nam = os.path.splitext(xml_path)[0]+'.tif'
+            #img_nam = os.path.splitext(xml_path)[0]+'.tif'
+            head,tail = os.path.split(xml_path)
+            head1,tail1 = os.path.split(head)
+            
+            img_nam = os.path.join(head1,'images',os.path.splitext(tail)[0]+'.tif')
+            #print(img_nam)
+            #import pdb;pdb.set_trace()
+            
             value = (img_nam,
                      #int(root.find('size')[0].text),
                      #int(root.find('size')[1].text),
@@ -57,6 +64,8 @@ def xmls2csv(xml_dir):
     cwd = os.getcwd()
     df = pd.DataFrame()
     for (root,dirs,files) in os.walk(xml_dir, topdown=True):
+        
+        
         
         appen = root.split(os.sep) [-(len(root.split(os.sep))-len(cwd.split(os.sep))) :]
         
